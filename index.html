@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Finances</title>
+</head>
+
+<body>
+    <h2>Finances</h2>
+
+    <div class="container">
+        <h4>Total Balance</h4>
+
+        <h1 id="balance" class="balance">$ 0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Resources</h4>
+                <p id="money-plus" class="money plus">+ $0.00</p>
+            </div>
+
+            <div>
+                <h4>Expenses</h4>
+                <p id="money-minus" class="money minus">- $0.00</p>
+            </div>
+        </div>
+
+        <h3>Transactions</h3>
+
+        <ul id="transactions" class="transactions">
+
+        </ul>
+
+        <h3>Add transaction</h3>
+
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Name:</label>
+                <input autofocus type="text" id="text" placeholder="Transaction Name" />
+            </div>
+
+            <div class="form-control">
+                <label class="grid" for="amount">Value: <button type="button" id="signal"></button>
+                </label>
+                <input type="number" id="amount" placeholder="Transaction Value" />
+                <small class="small">(negative - expenses, positive - resources)</small>
+            </div>
+
+            <button class="btn">Add Transaction</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
